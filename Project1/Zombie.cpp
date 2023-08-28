@@ -46,14 +46,11 @@ void Zombie::moverse(float _posicionFinalX, float _posicionFinalY, int _velocida
 {
 }
 
-void Zombie::atacar()
-{
-}
-
 void Zombie::morir() {
 
 }
 
-void Zombie::morder()
+int Zombie::morder()
 {
+	return 20;
 }

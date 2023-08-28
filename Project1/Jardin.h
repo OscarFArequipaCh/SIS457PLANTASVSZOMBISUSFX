@@ -20,6 +20,7 @@ public:
 	void generar();
 	void localizarZombie(float _posicionX, float _posicionY);
 	void localizarPlanta(int _posicionX, int _posicionY);
+	bool Choques(float _posicionX, float _posicionY);
 
 	void setlimitX(float _limitX) { limitX = _limitX; };
 	float getlimitX() { return limitX; };

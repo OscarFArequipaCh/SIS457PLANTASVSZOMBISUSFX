@@ -30,7 +30,7 @@ bool Jardin::gameover(float _posicion)
 }
 
 void Jardin::localizarZombie(float _posicionX, float _posicionY) {
-	_posicionX = _posicionX / 90;
+	_posicionX = _posicionX / 100;
 	_posicionY = _posicionY / 100;
 	for (int i = 0; i < 5; i++) {
 		if (i >= _posicionY - 1) {
@@ -40,7 +40,7 @@ void Jardin::localizarZombie(float _posicionX, float _posicionY) {
 					_posicionX = 10;
 				}
 				else {
-					if(cuadros[i][j] != "_" || cuadros[i][j] != "+") cuadros[i][j] = "_";
+					if(cuadros[i][j] != "_" && cuadros[i][j] != "+") cuadros[i][j] = "_";
 				}
 			}
 			_posicionY = 6;
@@ -71,4 +71,11 @@ void Jardin::localizarPlanta(int _posicionX, int _posicionY)
 		}
 	}
 	
+}
+
+bool Jardin::Choques(float _posicionX, float _posicionY) {
+	_posicionX = _posicionX / 100;
+	_posicionY = _posicionY / 100;
+	if (cuadros[int(_posicionX)][int(_posicionY)] == "+") return true;
+	else return false;
 }

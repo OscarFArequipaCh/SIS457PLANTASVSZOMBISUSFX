@@ -59,8 +59,7 @@ public:
 	void moverse(float, float);
 	void moverse(float, float, int);
 
-	void atacar();
 	void morir();
-	void morder();
+	int morder();
 };
 

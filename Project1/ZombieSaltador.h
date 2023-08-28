@@ -7,7 +7,7 @@ class ZombieSaltador : public Zombie
 {
 private:
 
-	float DisSalto = 3.5;
+	float DisSalto = 100;
 
 public:
 
