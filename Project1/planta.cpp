@@ -24,6 +24,6 @@ void planta::morir()
 	}
 }
 
-void planta::recibirDaño() {
-	Energia = Energia - 20;
+void planta::recibirDaño(int _daño) {
+	Energia = Energia - _daño;
 }

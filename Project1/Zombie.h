@@ -55,7 +55,7 @@ public:
 
 
 	//Metodos propios
-	void moverse();
+	virtual void moverse();
 	void moverse(float, float);
 	void moverse(float, float, int);
 

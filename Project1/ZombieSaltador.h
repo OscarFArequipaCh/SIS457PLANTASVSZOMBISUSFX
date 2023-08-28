@@ -13,6 +13,7 @@ public:
 
 	ZombieSaltador();
 
+	void moverse();
 	void Saltar();
 };
 

@@ -38,6 +38,6 @@ public:
 
 	bool invocar(int _soldisponible);
 	void morir();
-	void recibirDaño();
+	void recibirDaño(int _daño);
 };
 

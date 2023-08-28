@@ -3,7 +3,10 @@
 ZombieSaltador::ZombieSaltador()
 {
 	setTipoZombie("Zombie Saltador");
-	setVelocidad(60);
+}
+
+void ZombieSaltador::moverse() {
+	posicionX = posicionX - (velocidad*2);
 }
 
 void ZombieSaltador::Saltar()

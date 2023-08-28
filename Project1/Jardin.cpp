@@ -76,6 +76,6 @@ void Jardin::localizarPlanta(int _posicionX, int _posicionY)
 bool Jardin::Choques(float _posicionX, float _posicionY) {
 	_posicionX = _posicionX / 100;
 	_posicionY = _posicionY / 100;
-	if (cuadros[int(_posicionX)][int(_posicionY)] == "+") return true;
-	else return false;
+	if (cuadros[int(_posicionY)][int(_posicionX)-1] == "+") { return true; }
+	else { return false; };
 }
