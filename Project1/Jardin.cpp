@@ -50,15 +50,25 @@ void Jardin::localizarZombie(float _posicionX, float _posicionY) {
 
 void Jardin::localizarPlanta(int _posicionX, int _posicionY) 
 {
-	for (int i = 0; i < 5; i++) {
-		if (i == _posicionY - 1) {
+	if (_posicionX == NULL && _posicionY == NULL) {
+		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 9; j++) {
-				if (j == _posicionX - 1) {
-					cuadros[i][j] = "+";
-					_posicionX = 10;
-				}
-			}
-			_posicionY = 6;
+				if (cuadros[i][j] == "+") cuadros[i][j] = "_";
+			}	
 		}
 	}
+	else {
+		for (int i = 0; i < 5; i++) {
+			if (i == _posicionY - 1) {
+				for (int j = 0; j < 9; j++) {
+					if (j == _posicionX - 1) {
+						cuadros[i][j] = "+";
+						_posicionX = 10;
+					}
+				}
+				_posicionY = 6;
+			}
+		}
+	}
+	
 }
